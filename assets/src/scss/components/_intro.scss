@@ -1,0 +1,186 @@
+#intro {
+	background: url(../img/bg.jpeg)  no-repeat center center;
+	min-height: 360px;
+
+	.pro-pic {
+		min-height: 360px;
+	    background: url(../img/pro-pic.jpg);
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    transition: all .5s ease-in-out;
+	}
+
+	.intro {
+		text-align: center;
+		padding-top: 5rem;
+		// Below 34em (544px)
+		@include media("<sm") {
+			padding-top: 2rem;
+		}
+
+	    h1 {
+			font-family: 'Baloo Bhai', cursive;
+			font-size: 5rem;
+			line-height: 1;
+			color: #fff;
+			text-shadow:0 1px 0 hsl(174,5%,80%),
+	                 	0 2px 0 hsl(174,5%,75%),
+	                 	0 3px 0 hsl(174,5%,70%),
+	                 	0 4px 0 hsl(174,5%,66%),
+	                 	0 5px 0 hsl(174,5%,64%),
+	                 	0 6px 0 hsl(174,5%,62%),
+	                 	0 7px 0 hsl(174,5%,61%),
+	                 	0 8px 0 hsl(174,5%,60%),
+	
+	                 	0 0 5px rgba(0,0,0,.05),
+	                	0 1px 3px rgba(0,0,0,.2),
+	                	0 3px 5px rgba(0,0,0,.2),
+	               		0 5px 10px rgba(0,0,0,.2),
+	              		0 10px 10px rgba(0,0,0,.2),
+	              		0 20px 20px rgba(0,0,0,.3);
+
+	        // Below 34em (544px)
+			@include media("<sm") {
+				font-size: 3rem;
+			}
+		}
+
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.5rem;
+			line-height: 1;
+			color: #999;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				padding-bottom: 2rem;
+			}
+		}
+	}
+
+}
+
+.intro-text {
+	padding-left: 12rem;
+	padding-right: 12rem;
+
+	// Below 34em (544px)
+	@include media("<sm") {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	p {
+		font-size: 1rem;
+		color: #fff;
+		margin-top: 7rem;
+		margin-bottom: 3rem;
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			margin-top: 3rem;
+		}
+	}
+
+	.btn-intro {
+		border: solid 1px #fff;
+	    color: #fff;
+	    display: inline-block;
+	    font-size: 1rem;
+	    overflow: hidden;
+	    padding: .7rem 2rem;
+	    text-decoration: none;
+	    background: transparent;
+	    transition: background-color 0.3s;
+	    border-radius: 0;
+	    width: 16rem;
+
+	    &:hover {
+	    	color: #333;
+	    	background-color: #fff;
+	    	font-weight: bold;
+	    }
+	}
+}
+
+/*===================================
+  Menu icon
+=====================================*/
+button {
+  border: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  font-size: 1.7em;
+  background: #e74c3c;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+button:focus { 
+  outline: none; 
+}
+
+.textbox p a {
+  color: #fff;
+  text-decoration: none;
+  background: #03A9F4;
+}
+
+#navigation {
+  display: none;
+  position: fixed;
+  text-align: center;
+  font-size: 1.1em;
+  width: 100%;
+  color: #fff;
+  background: #e74c3c;
+  z-index: 1;
+
+  ul {
+	  list-style-type: none;
+	  padding: 1.5rem;
+	  margin: 0;
+	  line-height: 1em;
+
+	  // Below 34em (544px)
+		@include media("<sm") {
+			padding: 0.65rem;
+		}
+	}
+}
+#navigation li a {
+  color: #fff;
+}
+
+#navigation ul li {
+  padding-left: 2%;
+  display: inline;
+}
+
+#navigation ul li:first-child { padding-left: 0; }
+
+li a{
+  text-decoration: none;
+}
+
+.fa-bars:hover {
+	color: #999;
+}
+
+/*===================================
+   Media Queries
+=====================================*/
+
+@media only screen and (max-width: 480px) {
+#navigation {
+  height: 45px;
+  font-size: .9em;
+}
+}
