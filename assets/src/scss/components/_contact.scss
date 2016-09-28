@@ -1,10 +1,22 @@
 #contact {
+	background: url(../img/contact-bg.jpeg)  no-repeat center center;
 	color: #fff;
 	padding-bottom: 3rem;
+	height: 50vh;
+
+	&:before {
+		background: rgba(255,0,0, 0.5);
+	}
+
 	h1 {
-		border-bottom: solid 1px #999;
-	    margin-bottom: 30px;
+		border-bottom: solid 1px #d4d4d4;
+	    margin-bottom: 3rem;
 	    position: relative;
+
+	    @include media("<sm") {
+			margin-bottom: 1rem;
+			padding-bottom: 0;
+		}
 
 	    span {
 	    	background: #e74c3c;
@@ -18,7 +30,14 @@
 	}
 
 	p {
+		font-family: 'Russo One', sans-serif;
+		color: #fff;
 		font-weight: bold;
-		font-size: 1rem;
+		font-size: 1.5rem;
+		text-shadow: 2px 2px 8px #e74c3c;
+
+		@include media("<sm") {
+			padding-top: 1rem;
+		}
 	}
 }

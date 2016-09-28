@@ -2,7 +2,7 @@
 	color: #fff;
 
 	h1 {
-		border-bottom: solid 1px #999;
+		border-bottom: solid 1px #d4d4d4;
 	    margin-bottom: 60px;
 	    padding-bottom: 20px;
 	    position: relative;
@@ -39,7 +39,6 @@
 
 	    p {
 	    	font-size: 1em;
-
 	    }
 	}
 	.rest-para {
@@ -107,8 +106,7 @@
 		li {
 			width: 50%;
 			float: left;
-			list-style-type: none;
-			
+			list-style-type: none;			
 			padding-right: 5.3333333%;
 		}
 
@@ -116,9 +114,8 @@
 
 		h2 {
 			margin: 0 0 1.5em;
-			border-bottom: 1px solid #ccc;
-			
-			padding: 0 0 .25em;
+			border-bottom: 1px solid #ccc;			
+			//padding: 0 0 .25em;
 		}
 
 		/* Styling an indeterminate progress bar */

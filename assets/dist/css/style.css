@@ -11,9 +11,10 @@ Copyright 2015-2015 Saddam Azad
 */
 @import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Russo+One';
 #intro {
-  min-height: 360px; 
-  background: url(../img/bg.jpeg) no-repeat center center;
+  /* background: url(../img/bg.jpeg)  no-repeat center center; */
+  min-height: 360px;
 }
 #intro .pro-pic {
   min-height: 360px;
@@ -51,7 +52,7 @@ Copyright 2015-2015 Saddam Azad
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   line-height: 1;
-  color: #999;
+  color: #d4d4d4;
 }
 @media (max-width: 33.99em) {
   #intro .intro p {
@@ -191,7 +192,7 @@ li a {
   position: relative; 
   padding-bottom: 20px;
   margin-bottom: 60px;
-  border-bottom: solid 1px #999;
+  border-bottom: solid 1px #d4d4d4;
 }
 #resume h1 span {
   position: absolute;
@@ -295,7 +296,6 @@ li a {
   margin-bottom: 5em;
 }
 #resume .skill h2 {
-  padding: 0 0 .25em; 
   margin: 0 0 1.5em;
   border-bottom: 1px solid #ccc;
 }
@@ -433,7 +433,7 @@ li a {
   padding-bottom: 20px;
   margin-bottom: 40px;
   color: #fff;
-  border-bottom: solid 1px #999;
+  border-bottom: solid 1px #d4d4d4;
 }
 .works .heading h1 span {
   position: absolute;
@@ -598,13 +598,24 @@ li a {
 }
 
 #contact {
-  padding-bottom: 3rem; 
+  height: 50vh; 
+  padding-bottom: 3rem;
   color: #fff;
+  background: url(../img/contact-bg.jpeg) no-repeat center center;
+}
+#contact:before {
+  background: rgba(255, 0, 0, .5);
 }
 #contact h1 {
   position: relative; 
-  margin-bottom: 30px;
-  border-bottom: solid 1px #999;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #d4d4d4;
+}
+@media (max-width: 33.99em) {
+  #contact h1 {
+    padding-bottom: 0; 
+    margin-bottom: 1rem;
+  }
 }
 #contact h1 span {
   position: absolute;
@@ -616,8 +627,16 @@ li a {
   background: #e74c3c;
 }
 #contact p {
-  font-size: 1rem; 
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px #e74c3c;
+}
+@media (max-width: 33.99em) {
+  #contact p {
+    padding-top: 1rem;
+  }
 }
 
 body {

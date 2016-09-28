@@ -1,5 +1,5 @@
 #intro {
-	background: url(../img/bg.jpeg)  no-repeat center center;
+	/* background: url(../img/bg.jpeg)  no-repeat center center; */
 	min-height: 360px;
 
 	.pro-pic {
@@ -50,7 +50,7 @@
 			font-family: 'Open Sans', sans-serif;
 			font-size: 1.5rem;
 			line-height: 1;
-			color: #999;
+			color: #d4d4d4;
 
 			// Below 34em (544px)
 			@include media("<sm") {
